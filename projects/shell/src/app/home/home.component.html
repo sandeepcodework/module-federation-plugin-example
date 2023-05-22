@@ -1,1 +1,47 @@
-<h1>Welcome!</h1>
+<div class="container">
+  <!-- Page Title Start -->
+  <h2 class="pb-2">Loss Report</h2>
+  <!-- Page Title End -->
+
+  <!-- Breadcrumb & Status Start -->
+  <div class="row">
+    <div class="col-3">
+      <!-- Breadcrumb Start -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Loss Report
+          </li>
+        </ol>
+      </nav>
+      <!-- Breadcrumb End -->
+    </div>
+    <div class="col-3 ms-auto text-end">
+      <!-- Staus Start -->
+      <span> Status </span>
+      <span class="badge rounded-pill bg-warning text-dark">Incomplete</span>
+      <!-- Staus End -->
+    </div>
+  </div>
+  <!-- Breadcrumb & Status End -->
+
+  <!-- User Info & File Loss Report Start -->
+  <div class="row gx-5 mt-5">
+    <!-- User Info Start -->
+    <div class="col-4"><app-profile></app-profile></div>
+    <!-- User Info End -->
+    <!-- File Loss Report Start -->
+    <div class="col-6 ms-auto text-start">
+      <app-loss-report></app-loss-report>
+    </div>
+    <!-- File Loss Report End -->
+  </div>
+  <!-- User Info & File Loss Report End -->
+
+  <div class="row">
+    <div class="col">
+      <app-faq></app-faq>
+    </div>
+  </div>
+</div>

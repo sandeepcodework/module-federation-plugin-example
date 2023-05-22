@@ -1,0 +1,6 @@
+{
+  "mfe1": "http://localhost:4201/remoteEntry.js",
+  "mfeUser": "http://localhost:4202/remoteEntry.js",
+  "mfeFAQ": "http://localhost:4203/remoteEntry.js",
+  "mfeLossReport": "http://localhost:4204/remoteEntry.js"
+}

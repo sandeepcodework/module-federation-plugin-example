@@ -1,8 +1,50 @@
-<ul>
-    <li><img src="../assets/angular.png" width="50"></li>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/flights/flights-search">Flights</a></li>
-</ul>
+<!-- <ul>
+  <li><img src="../assets/angular.png" width="50" /></li>
+  <li><a routerLink="/">Home</a></li>
+  <li><a routerLink="/flights/flights-search">Flights</a></li>
+  <li><a routerLink="/profile">Profile</a></li>
+</ul> -->
 
-<router-outlet></router-outlet>
+<div class="p-4">
+  <!-- Header Start -->
+  <div class="mb-5">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+    >
+      <a
+        href="/"
+        class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+      >
+        <img
+          src="https://amfament.gitlab.io/amfam/digital/digital-services/designoperations/developers/supadhya/guide/assets/images/american-family-logo.svg"
+          alt="logo"
+        />
+      </a>
 
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a class="nav-link px-2 link-secondary" routerLink="/">Home</a></li>
+        <li>
+          <a routerLink="/loss-report" class="nav-link px-2 link-dark"
+            >Loss Report</a
+          >
+        </li>
+        <li><a routerLink="/faq" class="nav-link px-2 link-dark">FAQs</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <a routerLink="/profile" class="">Welcome Kate Jennings</a>
+      </div>
+    </header>
+  </div>
+  <!-- Header End -->
+
+  <!-- Content Start -->
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- Content End -->
+
+  <!-- Footer Start -->
+  <footer class="pt-5 my-5 text-muted border-top">AMFAM · © 2022</footer>
+  <!-- Footer End -->
+</div>
